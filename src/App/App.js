@@ -1,6 +1,8 @@
 import React from 'react';
 
-import dogs from './dogs';
+import allDogs from './dogs';
+
+import DogPen from '../components/DogPen/DogPen';
 
 import './App.scss';
 
@@ -10,14 +12,15 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ dogs });
+    this.setState({ dogs: allDogs });
   }
 
   render() {
+    const { dogs } = this.state;
     return (
       <div className="App">
         <div>Doggie Day Care</div>
-        {/* { <DogPen dogs={dogs} />} */}
+        <DogPen dogs={dogs} />
       </div>
     );
   }
