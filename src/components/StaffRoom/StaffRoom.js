@@ -19,7 +19,7 @@ class StaffRoom extends React.Component {
       <Employee key={employee.id} employee={employee} />
     ));
     return (
-      <div>
+      <div className="StaffRoom d-flex flex-wrap">
         { buildEmployees }
       </div>
     );
