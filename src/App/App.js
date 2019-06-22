@@ -21,12 +21,13 @@ class App extends React.Component {
   }
 
   render() {
-    const { dogs } = this.state;
+    const { dogs, employees } = this.state;
     return (
       <div className="App">
         <div>Doggie Day Care</div>
         <DogPen dogs={dogs} />
-        <StaffRoom employees={allEmployees} />
+        <div>Dog Caregivers</div>
+        <StaffRoom employees={employees} />
       </div>
     );
   }
