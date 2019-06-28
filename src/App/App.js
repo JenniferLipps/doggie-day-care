@@ -24,9 +24,9 @@ class App extends React.Component {
     const { dogs, employees } = this.state;
     return (
       <div className="App">
-        <div>Doggie Day Care</div>
+        <div className="heading">Doggie Day Care</div>
         <DogPen dogs={dogs} />
-        <div>Dog Caregivers</div>
+        <div className="heading">Dog Caregivers</div>
         <StaffRoom employees={employees} />
       </div>
     );
