@@ -1,0 +1,12 @@
+{
+  "employee1": {
+    "name": "Ron",
+    "experience": 6,
+    "strength": "Doesn't mind barking."
+  },
+  "employee2": {
+    "name": "Carla",
+    "experience": 10,
+    "strength": "Always has snacks."
+  }
+}
