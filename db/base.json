@@ -1,4 +1,5 @@
 {
   "dogs": "bark",
-  "employees": "walk"
+  "employees": "walk",
+  "walk": "walkies"
 }
