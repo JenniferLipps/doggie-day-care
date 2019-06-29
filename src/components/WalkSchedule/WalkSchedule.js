@@ -9,6 +9,10 @@ import walkData from '../../helpers/data/walksData';
 import Walk from '../Walk/Walk';
 
 class WalkSchedule extends React.Component {
+  state = {
+    walks: [],
+  }
+
   static propTypes = {
     walks: PropTypes.arrayOf(walkShape.walkShape),
   }
