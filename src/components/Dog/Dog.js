@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import PropTypes from 'prop-types';
 import dogShape from '../../helpers/propz/dogShape';
 
 import './Dog.scss';
@@ -12,7 +12,7 @@ class Dog extends React.Component {
   render() {
     const { dog } = this.props;
     return (
-      <div className="card-deck Dog col-3">
+      // <div className="card-deck Dog col-3">
       <div className ="card" id="dogCard">
         <img src={dog.imageUrl} className="card-img-top" alt="{dog.name}"/>
         <div className="card-body">
@@ -23,7 +23,7 @@ class Dog extends React.Component {
           <p>Good Dog: {dog.goodDog}/10</p>
         </div>
       </div>
-      </div>
+      // </div>
     );
   }
 }

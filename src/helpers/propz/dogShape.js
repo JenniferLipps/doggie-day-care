@@ -7,8 +7,8 @@ const dogShape = PropTypes.shape({
   breed: PropTypes.string.isRequired,
   bestFeature: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  loudness: PropTypes.string.isRequired,
-  goodDog: PropTypes.string.isRequired,
+  loudness: PropTypes.number.isRequired,
+  goodDog: PropTypes.number.isRequired,
 });
 
 export default { dogShape };

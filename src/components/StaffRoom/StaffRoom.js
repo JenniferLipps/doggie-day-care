@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import employeeShape from '../../helpers/propz/employeeShape';
 
+import employeeData from '../../helpers/data/employeesData';
+
 import Employee from '../Employee/Employee';
 
 import './StaffRoom.scss';
@@ -13,9 +15,18 @@ class StaffRoom extends React.Component {
     employees: PropTypes.arrayOf(employeeShape.employeeShape),
   }
 
+  state = {
+    employees: [],
+  }
+
+  componentDidMount() {
+    employeeData.getEmployees()
+      .then(employees => this.setState({ employees }))
+      .catch(err => console.error('no employees', err));
+  }
+
   render() {
-    const { employees } = this.props;
-    const buildEmployees = employees.map(employee => (
+    const buildEmployees = this.state.employees.map(employee => (
       <Employee key={employee.id} employee={employee} />
     ));
     return (
