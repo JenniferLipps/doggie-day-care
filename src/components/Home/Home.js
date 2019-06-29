@@ -11,9 +11,11 @@ class Home extends React.Component {
       <div className="Home">
         <div className="row">
           <div className="col">
+            <h2>The Dogs</h2>
             <DogPen />
           </div>
           <div className="col">
+            <h2>The People</h2>
             <StaffRoom />
           </div>
         </div>
