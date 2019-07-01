@@ -8,5 +8,10 @@
     "name": "Carla",
     "experience": 10,
     "strength": "Always has snacks."
+  },
+  "employee3": {
+    "name": "Jen",
+    "experience": 12,
+    "strength": "Goes for long walks."
   }
 }
